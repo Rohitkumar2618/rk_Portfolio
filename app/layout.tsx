@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import localFont from "next/font/local";
 import GrainEffect from "@/components/visualEffects/grain-effect";
+import { Cursor } from "@/components/cursor/cursor";
 
 // Google Fonts
 const mainFont = Bricolage_Grotesque({
@@ -40,6 +41,7 @@ export default function RootLayout({
         )}
       >
         <GrainEffect />
+        <Cursor color="#fff" />
         {children}
       </body>
     </html>
