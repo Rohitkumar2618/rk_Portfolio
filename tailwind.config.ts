@@ -34,8 +34,9 @@ const config: Config = {
           benzol: "#00d372",
         },
         pink: {
-          default: "#d87cac", // Corrected: Added a proper key for pink
+          ice: "#d87cac", // Corrected: Added a proper key for pink
         },
+        border: "rgba(255 255  255/0.05)",
       },
       backgroundImage: {
         grain: "url(/assets/images/background/noisy.png)",
