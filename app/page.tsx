@@ -2,9 +2,10 @@
 import Button from "@/components/ui/button";
 import Card from "@/components/ui/card";
 import Input from "@/components/ui/input";
+import LiveClock from "@/components/ui/live-clock";
 import TextAreaInput from "@/components/ui/text-area";
 // import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
-import { cn } from "@/lib/utils";
+
 import { FaHome, FaUser } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 
@@ -44,6 +45,7 @@ export default function Home() {
             placeholder="Enter your Username..."
           />
           <TextAreaInput placeholder="home" />
+          <LiveClock timeZone="India" />
         </Card>
       </div>
     </div>
