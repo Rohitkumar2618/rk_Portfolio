@@ -1,6 +1,8 @@
 "use client";
 import Button from "@/components/ui/button";
 import Card from "@/components/ui/card";
+import Input from "@/components/ui/input";
+import TextAreaInput from "@/components/ui/text-area";
 // import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
 import { cn } from "@/lib/utils";
 import { FaHome, FaUser } from "react-icons/fa";
@@ -35,6 +37,13 @@ export default function Home() {
               Goole
             </Button>
           </div>
+          <Input type="text" placeholder="Enter your name..." />
+          <Input
+            type="text"
+            icon={<FaUser />}
+            placeholder="Enter your Username..."
+          />
+          <TextAreaInput placeholder="home" />
         </Card>
       </div>
     </div>
