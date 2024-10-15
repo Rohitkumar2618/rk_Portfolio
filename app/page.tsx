@@ -1,15 +1,5 @@
 "use client";
-import Button from "@/components/ui/button";
-import Card from "@/components/ui/card";
-import Input from "@/components/ui/input";
-import LiveClock from "@/components/ui/live-clock";
-import ScrollDown from "@/components/ui/scroll-down";
-import TextAreaInput from "@/components/ui/text-area";
-import MagneticWrapper from "@/components/visualEffects/magnetic-wrapper";
-import Landing from "@/sections/landing";
-
-import { FaHome, FaUser } from "react-icons/fa";
-import { IoIosSearch } from "react-icons/io";
+import Featured from "@/sections/featured";
 
 export default function Home() {
   return (
@@ -63,7 +53,8 @@ export default function Home() {
     //   </div>
     // </div>
     <div>
-      <Landing />
+      <Featured />
+      {/* <Landing /> */}
     </div>
   );
 }

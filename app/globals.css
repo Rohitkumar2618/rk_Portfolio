@@ -16,3 +16,61 @@ body {
     content: "";
   }
 }
+
+/* bottom fade */
+.bottom_fade {
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 20.1275%,
+    rgba(255, 255, 255) 100%
+  );
+}
+
+/* svg curv */
+/* .line {
+  height: 1px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.line svg {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: -50px;
+}
+
+.line svg path {
+  stroke-width: 1px;
+  stroke: white;
+  fill: none;
+}
+
+.box {
+  height: 40px;
+  width: 100px;
+  display: flex;
+  position: relative;
+  top: -20px;
+  z-index: 1;
+} */
+
+.line-container {
+  position: relative;
+  width: 70%;
+  height: 100px;
+  /* background-color: black; You can adjust background as per your design */
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+path {
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+}
