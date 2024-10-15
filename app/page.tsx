@@ -3,7 +3,9 @@ import Button from "@/components/ui/button";
 import Card from "@/components/ui/card";
 import Input from "@/components/ui/input";
 import LiveClock from "@/components/ui/live-clock";
+import ScrollDown from "@/components/ui/scroll-down";
 import TextAreaInput from "@/components/ui/text-area";
+import MagneticWrapper from "@/components/visualEffects/magnetic-wrapper";
 // import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
 
 import { FaHome, FaUser } from "react-icons/fa";
@@ -33,6 +35,14 @@ export default function Home() {
             <Button isIcon>
               <FaUser />
             </Button>
+
+            <MagneticWrapper className="w-[350px]">
+              <Button className="hover:bg-red-300">
+                {" "}
+                <FaUser />
+                Magnetic Button
+              </Button>
+            </MagneticWrapper>
             <Button link="www.google.com">
               <IoIosSearch></IoIosSearch>
               Goole
@@ -47,6 +57,9 @@ export default function Home() {
           <TextAreaInput placeholder="home" />
           <LiveClock timeZone="India" />
         </Card>
+        <MagneticWrapper className="w-[350px]">
+          <ScrollDown />
+        </MagneticWrapper>
       </div>
     </div>
   );
